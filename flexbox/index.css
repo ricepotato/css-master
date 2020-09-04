@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+/* 
+flex container 의 flex-direction 기본값은 row 
+align-items 의 기본값을 flex-start
+*/
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrapper2 {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  border: 1px solid white;
+}
+
+.wrapper4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 50vh;
+  border: 1px solid white;
+}
+
+.wrapper5 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 50vh;
+  border: 1px solid white;
+}
+
+.box {
+  background-color: peru;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 2px;
+}
+
+.box2 {
+  background-color: cadetblue;
+  width: 200px;
+  margin-bottom: 2px;
+}

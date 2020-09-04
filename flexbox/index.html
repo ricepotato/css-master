@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <h1>flex layouts</h1>
+
+    <h2>display: flex;justify-content: center</h2>
+    <p>박스를 가운데에 배치한다.</p>
+    <div class="wrapper2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>display: flex;justify-content: space-around</h2>
+    <p>박스간의 거리를 같게만든다.</p>
+    <div class="wrapper">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>display: flex;justify-content: center; align-items: center;</h2>
+    <p>박스를 중앙에 배치한다.</p>
+    <div class="wrapper3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>display: flex;justify-content: center; align-items: flex-end;</h2>
+    <p>박스를 부모의 아래에 배치한다.</p>
+    <div class="wrapper5">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>display: flex;justify-content: center; align-items: stretch;</h2>
+    <p>
+      박스를 가운데에 배치한다. 높이를 부모의 높이만큼 늘린다.
+      <strong>자식은 높이값이 없어야 한다.</strong>
+    </p>
+    <div class="wrapper4">
+      <div class="box2">1</div>
+      <div class="box2">2</div>
+      <div class="box2">3</div>
+    </div>
+  </body>
+</html>
