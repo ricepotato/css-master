@@ -41,7 +41,10 @@
       <div class="box">3</div>
     </div>
 
-    <h2>display: flex;justify-content: center; align-items: stretch;</h2>
+    <h2>
+      display: flex;justify-content: center;
+      <span style="color: darkgoldenrod">align-items: stretch;</span>
+    </h2>
     <p>
       박스를 가운데에 배치한다. 높이를 부모의 높이만큼 늘린다.
       <strong>자식은 높이값이 없어야 한다.</strong>
@@ -50,6 +53,35 @@
       <div class="box2">1</div>
       <div class="box2">2</div>
       <div class="box2">3</div>
+    </div>
+
+    <h2>
+      display: flex;<strong style="color: darkgoldenrod"
+        >flex-direction: column;</strong
+      >
+      justify-content: center; align-items: flex-end;
+    </h2>
+    <p>축을 세로로 바꾼다.</p>
+    <div class="wrapper6">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h2>(child)align-self: center;, align-self: flex-end;</h2>
+    <p>child box 스스로 정렬</p>
+    <div class="wrapper7">
+      <div class="box3">1</div>
+      <div class="box3">2</div>
+      <div class="box3">3</div>
+    </div>
+
+    <h2>(child)order: 1;</h2>
+    <p>순서 바꾸기 order 0 이 기본값, 숫자대로 정렬됨</p>
+    <div class="wrapper7">
+      <div class="box4">1</div>
+      <div class="box4">2</div>
+      <div class="box4">3</div>
     </div>
   </body>
 </html>

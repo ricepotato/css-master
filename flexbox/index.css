@@ -41,7 +41,25 @@ align-items 의 기본값을 flex-start
   border: 1px solid white;
 }
 
-.box {
+.wrapper6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid white;
+}
+
+.wrapper7 {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  border: 1px solid white;
+}
+
+.box,
+.box3,
+.box4 {
   background-color: peru;
   height: 200px;
   width: 200px;
@@ -52,4 +70,16 @@ align-items 의 기본값을 flex-start
   background-color: cadetblue;
   width: 200px;
   margin-bottom: 2px;
+}
+
+.box3:nth-child(2) {
+  align-self: center;
+}
+
+.box3:nth-child(3) {
+  align-self: flex-end;
+}
+
+.box4:nth-child(2) {
+  order: 1;
 }
