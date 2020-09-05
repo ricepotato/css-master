@@ -10,7 +10,7 @@
     <h1>flex layouts</h1>
 
     <h2>display: flex;justify-content: center</h2>
-    <p>박스를 가운데에 배치한다.</p>
+    <p>박스를 부모의 가운데에 배치한다.</p>
     <div class="wrapper2">
       <div class="box">1</div>
       <div class="box">2</div>
@@ -116,6 +116,32 @@
       <div class="box">5</div>
       <div class="box">6</div>
       <div class="box">7</div>
+    </div>
+
+    <h2>(child) flex-shrink: 2;</h2>
+    <p>
+      flex-wrap: nowrap 일때 부모 너비가 줄어들면 자식의 너비도 함께 줄어드는데
+      어느 자식이 더 많이 줄어들지 설정한다. 여기서는 2번째 박스가 다른 박스보다
+      두배 더 줄어든다.
+    </p>
+    <div class="wrapper3">
+      <div class="box5">1</div>
+      <div class="box5">2</div>
+      <div class="box5">3</div>
+      <div class="box5">4</div>
+    </div>
+
+    <h2>(child) flex-grow: 1;</h2>
+    <p>
+      flex-grow:0 이 기본값이다. flex-wrap: nowrap 일때 부모의 길이가 늘어나면
+      여분의 공간이 있으면 그만큼을 채우게된다. 지정된 값 비율만큼 해당 box 가
+      더 길어진다. 공간이 없으면 다시 다른 box 과 크기가 같아진다.
+    </p>
+    <div class="wrapper3">
+      <div class="box6">1</div>
+      <div class="box6">2</div>
+      <div class="box6">3</div>
+      <div class="box6">4</div>
     </div>
   </body>
 </html>
