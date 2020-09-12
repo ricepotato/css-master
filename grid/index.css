@@ -33,6 +33,14 @@ body {
     "footer footer footer footer";
 }
 
+.grid2 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  color: white;
+}
+
 .header {
   background-color: #2ecc71;
   grid-area: header;
@@ -50,4 +58,29 @@ body {
 .footer {
   background-color: #f39c12;
   grid-area: footer;
+}
+
+.header2 {
+  background-color: #2ecc71;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+.content2 {
+  background-color: #3498db;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.nav2 {
+  background-color: #8e44ad;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.footer2 {
+  background-color: #f39c12;
+  grid-column-start: 1;
+  grid-column-end: 5;
 }
