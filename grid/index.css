@@ -136,3 +136,28 @@ body {
 .footer3 {
   grid-area: footer;
 }
+
+.grid4 {
+  height: 50vh;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /*
+  align-items: end;
+  justify-items: right;
+  */
+  place-items: end right;
+  color: white;
+}
+
+.header4 {
+}
+.content4 {
+}
+
+.nav4 {
+}
+
+.footer4 {
+}
