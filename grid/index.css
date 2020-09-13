@@ -44,25 +44,35 @@ body {
 
 .header {
   background-color: #2ecc71;
-  grid-area: header;
 }
 .content {
   background-color: #3498db;
-  grid-area: content;
 }
 
 .nav {
   background-color: #8e44ad;
-  grid-area: nav;
 }
 
 .footer {
   background-color: #f39c12;
+}
+
+.header1 {
+  grid-area: header;
+}
+.content1 {
+  grid-area: content;
+}
+
+.nav1 {
+  grid-area: nav;
+}
+
+.footer1 {
   grid-area: footer;
 }
 
 .header2 {
-  background-color: #2ecc71;
   /*
   grid-column-start: 1;
   grid-column-end: 4;
@@ -71,7 +81,6 @@ body {
   grid-column: span 3;
 }
 .content2 {
-  background-color: #3498db;
   /* 
   grid-column-start: 1;
   grid-column-end: 4;
@@ -88,17 +97,42 @@ body {
 }
 
 .nav2 {
-  background-color: #8e44ad;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 
 .footer2 {
-  background-color: #f39c12;
   /*
   grid-column-start: 1;
   grid-column-end: 5;
   */
   /* -1 은 오른쪽부터 시작한 index 를 의미함 */
   grid-column: 1 / -1;
+}
+
+.grid3 {
+  height: 50vh;
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header header header header" 1fr
+    "content content content nav" 2fr
+    "content content content nav" 2fr
+    "footer footer footer footer" 2fr;
+  color: white;
+}
+
+.header3 {
+  grid-area: header;
+}
+.content3 {
+  grid-area: content;
+}
+
+.nav3 {
+  grid-area: nav;
+}
+
+.footer3 {
+  grid-area: footer;
 }
