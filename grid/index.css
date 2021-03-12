@@ -159,5 +159,30 @@ body {
 .nav4 {
 }
 
-.footer4 {
+.grid5 {
+  background-color: peru;
+  color: white;
+  display: grid;
+  gap: 5px;
+  height: 50vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  justify-content: space-around;
+  align-content: center;
+}
+
+.grid5 .header {
+  background-color: #2ecc71;
+}
+
+.grid5 .content {
+  background-color: #3498db;
+}
+
+.grid5 .nav {
+  background-color: #9b59b6;
+}
+
+.grid5 .footer {
+  background-color: #e67e22;
 }
