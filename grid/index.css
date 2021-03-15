@@ -1,0 +1,188 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 100px 50px 300px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.child {
+  background-color: peru;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  /* grid-template-columns: 200px 200px 200px 200px; */
+  grid-template-rows: repeat(4, 100px);
+  /* grid-template-rows: 200px 200px 200px 200px; */
+  grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
+}
+
+.grid2 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  color: white;
+}
+
+.header {
+  background-color: #2ecc71;
+}
+.content {
+  background-color: #3498db;
+}
+
+.nav {
+  background-color: #8e44ad;
+}
+
+.footer {
+  background-color: #f39c12;
+}
+
+.header1 {
+  grid-area: header;
+}
+.content1 {
+  grid-area: content;
+}
+
+.nav1 {
+  grid-area: nav;
+}
+
+.footer1 {
+  grid-area: footer;
+}
+
+.header2 {
+  /*
+  grid-column-start: 1;
+  grid-column-end: 4;
+  */
+  /* span 은 3 칸을 차지하는 것을 의미함 */
+  grid-column: span 3;
+}
+.content2 {
+  /* 
+  grid-column-start: 1;
+  grid-column-end: 4;
+  */
+  grid-column: 1 / -2;
+  /*
+  grid-row-start: 2;
+  grid-row-end: 4;
+  */
+
+  /*grid-row: 2 / 4;*/
+  /* 두번째줄부터 두칸을 차지한다는 의미 */
+  grid-row: 2 / span 2;
+}
+
+.nav2 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.footer2 {
+  /*
+  grid-column-start: 1;
+  grid-column-end: 5;
+  */
+  /* -1 은 오른쪽부터 시작한 index 를 의미함 */
+  grid-column: 1 / -1;
+}
+
+.grid3 {
+  height: 50vh;
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header header header header" 1fr
+    "content content content nav" 2fr
+    "content content content nav" 2fr
+    "footer footer footer footer" 2fr;
+  color: white;
+}
+
+.header3 {
+  grid-area: header;
+}
+.content3 {
+  grid-area: content;
+}
+
+.nav3 {
+  grid-area: nav;
+}
+
+.footer3 {
+  grid-area: footer;
+}
+
+.grid4 {
+  height: 50vh;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /*
+  align-items: end;
+  justify-items: right;
+  */
+  place-items: end right;
+  color: white;
+}
+
+.header4 {
+}
+.content4 {
+}
+
+.nav4 {
+}
+
+.grid5 {
+  background-color: peru;
+  color: white;
+  display: grid;
+  gap: 5px;
+  height: 50vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  justify-content: space-around;
+  align-content: center;
+}
+
+.grid5 .header {
+  background-color: #2ecc71;
+}
+
+.grid5 .content {
+  background-color: #3498db;
+}
+
+.grid5 .nav {
+  background-color: #9b59b6;
+}
+
+.grid5 .footer {
+  background-color: #e67e22;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>CSS Master - Grid</title>
+  </head>
+  <body>
+    <h1>Grid layouts</h1>
+    <h2>
+      display: grid; grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 100px 50px 300px; column-gap: 10px; row-gap: 10px;
+    </h2>
+    <p>grid layout</p>
+    <div class="wrapper">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+      <div class="child">10</div>
+    </div>
+
+    <h2>Grid Template areas</h2>
+    <p>
+      display: grid; grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(4, 100px); grid-template-areas: "header header
+      header header" "content content content nav" "content content content nav"
+      "footer footer footer footer";
+    </p>
+    <div class="grid">
+      <div class="header header1">1</div>
+      <div class="content content1">2</div>
+      <div class="nav nav1">3</div>
+      <div class="footer footer1">4</div>
+    </div>
+
+    <h2>Grid Row and Columns</h2>
+    <h3>parent</h3>
+    <p>
+      display: grid; grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(4, 100px);
+    </p>
+    <h3>child</h3>
+    <p>
+      grid-column-start: x; grid-column-end: y; grid-row-start: x; grid-row-end:
+      y;
+    </p>
+    <div class="grid2">
+      <div class="header header2">1</div>
+      <div class="content content2">2</div>
+      <div class="nav nav2">3</div>
+      <div class="footer footer2">4</div>
+    </div>
+    <h3>Grid Fraction</h3>
+    <p>
+      height: 50vh; display: grid; gap: 10px; grid-template: "header header
+      header header" 1fr "content content content nav" 2fr "content content
+      content nav" 2fr "footer footer footer footer" 2fr; color: white;
+    </p>
+    <div class="grid3">
+      <div class="header header3">1</div>
+      <div class="content content3">2</div>
+      <div class="nav nav3">3</div>
+      <div class="footer footer3">4</div>
+    </div>
+    <h3>Place Items</h3>
+    <p>
+      height: 50vh; display: grid; gap: 10px; grid-template-columns: repeat(4,
+      1fr); grid-template-rows: repeat(4, 1fr); align-items: end; justify-items:
+      right; color: white;
+    </p>
+    <div class="grid4">
+      <div class="header header4">Lorem ipsum dolor sit amet consectetur,</div>
+      <div class="content content4">Lorem ipsum</div>
+      <div class="nav nav4">Lorem ipsum dolor sit amet</div>
+      <div class="footer footer4">Lorem ipsum</div>
+    </div>
+
+    <div class="grid5">
+      <div class="header"></div>
+      <div class="content"></div>
+      <div class="nav"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
