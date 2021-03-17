@@ -2,5 +2,9 @@
     "[html]": {
         "editor.suggest.insertMode": "replace",
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }

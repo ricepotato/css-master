@@ -1,0 +1,117 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #efe952;
+}
+
+.grid-container {
+  width: 1200px;
+  height: 700px;
+  font-weight: 600;
+  display: grid;
+  background-color: #fd6b3a;
+  gap: 2px;
+  grid-template-columns: 25px 1fr 25px;
+  grid-template-rows: 25px 17fr 15fr 2fr 25px;
+  position: relative;
+}
+.grid-container .talk {
+  position: absolute;
+  background-color: #fd6b3a;
+  border-radius: 4px;
+  width: 35px;
+  height: 35px;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+header,
+footer {
+  background-color: white;
+  border: 2px solid #fd6b3a;
+  color: #fd6b3a;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+header {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+
+footer {
+  grid-column: 1 / 5;
+  grid-row: 5 / 6;
+}
+
+.vtext {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.menu {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  color: white;
+  background-color: #fd6b3a;
+
+  overflow: hidden;
+}
+
+.content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  background-image: url("farm_resize.jpg");
+  background-position: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 120px;
+  writing-mode: unset;
+  text-align: center;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.content .emoji {
+  font-size: 28px;
+}
+
+.newslatter {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.sns {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.order {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: #46ab4f;
+  color: white;
+}
+
+.reservations {
+  grid-column: 3 / 4;
+  grid-row: 3 / 5;
+  background-color: #46ab4f;
+  color: white;
+}
