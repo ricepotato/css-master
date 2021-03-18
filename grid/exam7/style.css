@@ -1,0 +1,67 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #343434;
+  gap: 2px;
+  border-top: 2px solid #343434;
+}
+
+.nav-grid div {
+  height: 35px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.nav-grid .filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-grid .filter div {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #343434;
+  gap: 2px;
+  border-top: 2px solid #343434;
+  border-bottom: 2px solid #343434;
+}
+
+.gallery-grid div {
+  padding: 5px;
+  background-color: white;
+}
+
+.gallery-grid .item-top {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-grid .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-grid .content img {
+  max-height: 300px;
+  max-width: 80%;
+}
+
+.gallery-grid .item-bottom {
+  display: flex;
+  justify-content: space-between;
+}
